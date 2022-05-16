@@ -15,7 +15,7 @@ This is a guide for students to setup Git and GitHub for use with GitHub Classro
 
 ### Steps for downloading and editing assignments from GitHub Classroom
 
-1.  Have a folder specifically for your class (call it something like classroom-COSC360-Winter-2018). Within this folder, I would recommend a folder titled lectures (this can be pulled from the organization--we will show you how to do this as it will be used to distribute sample code), as well a folder title labs.
+1.  Have a folder specifically for your class (call it something like classroom-COSC-360-Summer-2022). Within this folder, I would recommend a folder titled lectures (this can be pulled from the organization--we will show you how to do this as it will be used to distribute sample code), as well a folder title labs.
 
     Note you can do this as you normally would with pointing and clicking, but you can also use the shell! This is good practice if you want to use Git outside of the class, as you normally have to use the Shell to interact with Git. Sean Kross has a great guide for using the shell here--http://seankross.com/the-unix-workbench/. However, we'll show you the basic steps you need.
 
@@ -36,7 +36,7 @@ Users
         │
         │
         |
-        |---classroom-COSC360-Summer-2022
+        |---classroom-COSC-360-Summer-2022
             |
             |
             |
@@ -58,7 +58,7 @@ Users
 5.  After you make changes to the homework assignment, commit them. What are commits you ask? Commits are essentially taking a snapshot of your projects. For example, if I make changes to a code so that it prints "Hello world", and then commit them with an informative message, I can look at the history of my commits and view the code that I wrote at that time. If I made some more changes to the function that resulted in an error, I could go back to the commit where the code was originally working. This prevents you from creating several versions of your homework (homework-v1, homework-v2, ...) or from trying to remember what your code originally looked like.
 
 
-    You can do this through the shell. Navigate to the lab directory. If I am are working on lab-1, when I type `PWD` I will see `/users/rpaulson/class-documents/classroom-COSC360-Summer-2022/labs/lab-1`. Now type `git add -A`, and then `git commit -m "My commit message"`. `git add` is a command that tells git which files you want to record the changes to when you make your commit. For example, if I made changes to `file1` and `file2` since my last commit, I can choose to only commit (take a snapshot of) the changes I made to `file1`. `git add -A` says to add all of the files that have changed since the last commit. If I just want to add `file1`, I would instead type `git add file1`.
+    You can do this through the shell. Navigate to the lab directory. If I am are working on lab-1, when I type `PWD` I will see `/users/rpaulson/class-documents/classroom-COSC-360-Summer-2022/labs/lab-1`. Now type `git add -A`, and then `git commit -m "My commit message"`. `git add` is a command that tells git which files you want to record the changes to when you make your commit. For example, if I made changes to `file1` and `file2` since my last commit, I can choose to only commit (take a snapshot of) the changes I made to `file1`. `git add -A` says to add all of the files that have changed since the last commit. If I just want to add `file1`, I would instead type `git add file1`.
 
     Two things about committing. One, you should commit somewhat frequently. At minimum, if you're doing a homework assignment, you should make a commit each time that you've finished a question. Two, leave informative commit messages. "Added stuff" will not help you if you're looking at your commit history in a year. A message like "Added initial version of hello-world function" will be more useful.
 
